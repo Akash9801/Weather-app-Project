@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <h1>Welcome,</h1>
+    <p>Here you can find accurate weather for your area.</p>
+    <div class="search">
+        <input type="text" placeholder="Enter your city" id="cityInput">
+        <button id="openTab"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <!-- Button triggers modal -->
+
+
+<!-- Overlay (background shadow) -->
+<div id="overlay" class="overlay"></div>
+
+<!-- Sliding Tab -->
+<div id="weatherTab" class="tab">
+    <button id="closeTab" class="close-btn">✖</button>
+    <h2>Weather Details</h2>
+    <p id="cityName">City: </p>
+    <p id="temperature">Temperature: </p>
+    <p id="humidity">Humidity:</p>
+    <p id="wind">Wind: </p>
+    <p id="sunrise">Sunrise: </p>
+    <p id="sunset">Sunset: </p>  
+</div>
+
+</body>
+<script src="weather.js"></script>
+</html>
